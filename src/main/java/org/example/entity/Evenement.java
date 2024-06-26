@@ -26,7 +26,8 @@ public class Evenement {
     @Column(name="nbr_place")
     private int nbrPlace;
 
-    @OneToOne(mappedBy = "evenement")
+    @OneToOne
+    @JoinColumn(name = "id_adresse")
     private Adresse adresse;
 
     @OneToMany(mappedBy = "evenement")

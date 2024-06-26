@@ -20,11 +20,12 @@ public class Adresse {
     private String rue;
     private String ville;
 
-    @OneToOne
-    @JoinColumn(name = "id_client")
+    @OneToOne(mappedBy = "adresse")
+//    @JoinColumn(name = "id_client")
     private Client client;
 
-    @OneToOne
-    @JoinColumn(name = "id_evenement")
+    @OneToOne(mappedBy = "adresse")
+//    @JoinColumn(name = "id_evenement")
     private Evenement evenement;
+
 }

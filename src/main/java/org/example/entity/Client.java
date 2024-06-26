@@ -23,7 +23,8 @@ public class Client {
     private int age;
     private String tel;
 
-    @OneToOne(mappedBy = "client")
+    @OneToOne
+    @JoinColumn(name = "id_adresse")
     private Adresse adresse;
 
     @OneToMany(mappedBy = "client")
