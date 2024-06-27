@@ -4,6 +4,7 @@ import org.example.entity.Adresse;
 import org.example.entity.Billet;
 import org.example.entity.Evenement;
 import org.example.entity.Client;
+import org.example.util.IHM;
 import org.example.util.TypePlace;
 
 import javax.persistence.EntityManager;
@@ -15,8 +16,8 @@ import java.time.LocalTime;
 public class Main {
     public static void main(String[] args) {
 
-        EntityManagerFactory emf = Persistence.createEntityManagerFactory("exoBilletterieJPA");
-        EntityManager em = emf.createEntityManager();
+//        EntityManagerFactory emf = Persistence.createEntityManagerFactory("exoBilletterieJPA");
+//        EntityManager em = emf.createEntityManager();
 
         //creation d'adresses
 //        Adresse adresse = Adresse
@@ -58,27 +59,27 @@ public class Main {
 
 
         //creation de billet
-        Client client = em.find(Client.class, 1);
-        Evenement evenement = em.find(Evenement.class, 1);
-        Billet billet = Billet
-                .builder()
-                .numPlace(25)
-                .client(client)
-                .evenement(evenement)
-                .typePlace(TypePlace.valueOf("GOLD"))
-                .build();
-
-        em.getTransaction().begin();
-
-        em.persist(billet);
-
-        em.getTransaction().commit();
-
-
-
+//        Client client = em.find(Client.class, 1);
+//        Evenement evenement = em.find(Evenement.class, 1);
+//        Billet billet = Billet
+//                .builder()
+//                .numPlace(25)
+//                .client(client)
+//                .evenement(evenement)
+//                .typePlace(TypePlace.valueOf("GOLD"))
+//                .build();
+//
+//        em.getTransaction().begin();
+//
+//        em.persist(billet);
+//
+//        em.getTransaction().commit();
 
 //        System.out.println(client3.toString());
 
+
+        IHM ihm = new IHM();
+        ihm.start();
 
     }
 }

@@ -28,4 +28,15 @@ public class Adresse {
 //    @JoinColumn(name = "id_evenement")
     private Evenement evenement;
 
+@Override
+public String toString() {
+    return "Adresse{" +
+            "idAdresse=" + idAdresse +
+            ", rue='" + rue + '\'' +
+            ", ville='" + ville + '\n' +
+            '}';
 }
+}
+
+
+
