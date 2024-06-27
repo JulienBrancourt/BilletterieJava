@@ -16,30 +16,6 @@ import java.time.LocalTime;
 public class Main {
     public static void main(String[] args) {
 
-//        EntityManagerFactory emf = Persistence.createEntityManagerFactory("exoBilletterieJPA");
-//        EntityManager em = emf.createEntityManager();
-
-        //creation d'adresses
-//        Adresse adresse = Adresse
-//                .builder()
-//                .rue("rue truc")
-//                .ville("Toulouse")
-//                .build();
-
-
-        //creation de clients
-            //récupération d'une id d'adresse
-//        Adresse adresse = em.find(Adresse.class, 3);
-//
-//        Client client3 = Client
-//                .builder()
-//                .name("Tutu")
-//                .prenom("Nom3")
-//                .adresse(adresse)
-//                .age(15)
-//                .tel("0102030405")
-//                .build();
-
 //        Client client3 = em.find(Client.class, 1);
 //        Adresse adresse3 = em.find(Adresse.class, 1);
 //

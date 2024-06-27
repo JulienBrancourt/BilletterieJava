@@ -30,5 +30,16 @@ public class Client {
     @OneToMany(mappedBy = "client")
     private List<Billet> billets;
 
-
+    @Override
+    public String toString() {
+        return "Client{" +
+                "idClient=" + idClient +
+                ", name='" + name + '\'' +
+                ", prenom='" + prenom + '\'' +
+                ", age=" + age +
+                ", tel='" + tel + '\'' +'\n' +
+                '}';
+    }
 }
+
+

@@ -24,12 +24,14 @@ public class IHM {
         while (true) {
             System.out.println("=== Billetterie ===");
             System.out.println("1. Adresse");
+            System.out.println("2. Client");
 
             System.out.println("Sélectionnez : ");
             choix = sc.nextLine();
 
             switch (choix) {
                 case "1" -> IHMAdresse();
+                case "2" -> IHMClient();
                 default -> {
                     return;
                 }
@@ -41,6 +43,11 @@ public class IHM {
     private void IHMAdresse() {
         IHMAdresse ihmAdresse = new IHMAdresse();
         ihmAdresse.start();
+    }
+
+    private void IHMClient() {
+        IHMClient ihmClient = new IHMClient();
+        ihmClient.start();
     }
 
 }
